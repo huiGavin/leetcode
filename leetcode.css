@@ -1,0 +1,309 @@
+/*一般设置*/
+html,
+body{
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration: none;
+  color:gray;
+}
+
+
+/*整体布局*/
+nav {
+  font-size:5px;
+  border-bottom:1px rgba(0, 0, 0, 0.5) solid;
+  display: flex;
+  margin-bottom: 10px;
+  height:50px;
+    
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  font-size:15px;
+}
+ 
+footer {
+  height:82px;
+  color:white;
+  background-color:black;
+}
+
+
+/*主体*/
+  /*主栏*/
+section {
+  flex: 2.5; 
+}
+
+.pi{
+  color:black;
+}
+
+section>div,
+section>div>div{
+  display:flex;
+}
+
+.text{
+  width:160px;
+  font-size:10px;
+}
+
+.scene{
+  width:80px;
+  height:80px;
+}
+
+.pa{
+  background-color:rgb(241, 241, 241) ;
+  margin:10px;
+  border-radius:10px;
+}
+
+section .box p{
+  margin-right:40px;
+}
+
+section .box a:hover{
+  color:black;
+}
+
+section div span{
+  display:flex;
+  border-bottom:1px gray solid;
+  padding-bottom:20px;
+}
+
+.head{
+  width:30px;
+  height:30px;
+  position:relative;
+  margin-top:20px;
+  border-radius:50%;
+}
+/*
+.float{
+  opacity:0;
+  position:absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.head:hover .float{
+  opacity:1;
+}*/
+
+.picture{
+  height:90px;
+  width:150px;
+  position:relative;
+  margin-top:20px;
+  margin-left:310px;
+  border-radius:5px;
+}
+
+.word{
+  position: relative;
+  margin-left:15px;
+}
+
+
+
+
+
+
+  /*侧边栏*/
+aside {
+  margin-left:40px;
+  margin-top:30px;
+  width:500px;
+}
+.aside{
+  height:400px;
+  overflow-y: scroll;
+}
+
+.aside-top{
+  border:0.5px solid rgb(214, 214, 214);
+  border-radius:15px;
+  /*box-shadow:0px 0px 1px 1px rgb(214, 214, 214);*/
+  height:230px;  
+}
+
+table {
+  margin:0 auto;
+  padding: 10px;
+}
+
+table+div p{
+  color:black;
+}
+
+table+div p:first-child{
+  color:rgb(0, 200, 255);
+  font-size:80%;
+}
+
+table+div{
+  background-color:rgb(241, 241, 241);
+  margin:10px;
+  border-radius:5px;
+}
+
+table+div:hover{
+  background-color:rgb(226, 226, 226);
+}
+
+.t1,
+.t2{
+  text-align:center;
+  width:80%;
+  margin:auto;
+  margin-top:20px;
+}
+
+.t1{
+  border-top:1px rgb(241, 241, 241);
+  font-size:5px;
+}
+
+.t2{
+  background-color:black;
+  color:white;
+  border-radius:5px;
+  height:30px;
+  line-height:27px;
+}
+
+aside>p{
+  color:white;
+}
+
+
+
+/*导航*/
+#p1{
+  width:30px;
+  height:30px;
+  margin-top:10px;
+  margin-left:60px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li{
+  font-size:15px;
+  margin:10px 12px;
+}
+
+.store{
+  color:orange;
+}
+
+nav li a:hover,
+.log:hover {
+  color: black;
+  transition-duration: 200ms;
+}
+
+nav form {
+  margin-top:10px;
+  margin-left:300px;
+  display:flex;
+}
+  
+input {
+  height:30px;
+  width:200px;
+  border-radius: 10px;
+}
+ 
+input[type="search"] {
+  margin-right:0px;
+  border:0;
+  background-color: rgb(236, 236, 236);
+}
+  
+input[type="submit"] {
+  width:40px;
+  margin-left:0px;
+  background: rgb(165, 165, 165);
+  color: white;
+  border:0;
+}
+
+.log{
+  margin-top:10px;
+  margin-left:10px;
+  font-size:20px;
+}
+
+.vip{
+  background-color:rgb(255, 242, 216);
+  color:orange;
+  height:30px;
+  width:60px;
+  margin-top:10px;
+  margin-left:20px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.vip:hover{
+  background-color: rgb(255, 223, 163);
+}
+
+/*页脚*/
+footer div {
+  text-align: center;
+}
+
+footer div p{
+  line-height: 20px;
+}
+
+/*返回键*/
+.back-top{
+  position: sticky;
+  float: right;
+  top: 500px;
+  height: 0px;
+  right: 10px;
+}
+
+.back-top>a{
+  display: block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 80px;
+  border-radius: 50px;
+  color:gray;
+  background-color:white;
+  box-shadow:0px 0px 0px 1px gray;
+}
+
+/*吸顶效果*/
+.box{
+position: -webkit-sticky;
+position: sticky;
+top: 0px;
+}
+
+.aside{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
