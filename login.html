@@ -6,53 +6,24 @@
     <title>leetcode登录/注册</title>
     <link rel="shortcut icon" href="favicon.svg">
     <link rel="stylesheet" href="login.css">
-    <script src="login.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
- 
-​​
-    
-    <script type="text/javascript"> 
-        /*
-         FileExists(filepath)是验证文件是否存在的方法,filepath是文件路径
-         OpenTextFile，第二个参数有三种方式，都是常量:
-         ForReading=1          以只读方式打开文件。 不能写这个文件。
-         ForWriting=2          以写方式打开文件
-         ForAppending= 8       打开文件并从文件末尾开始写。
-        */
-        
-        var oFso,oFile,sFile,sContent;
-         sFile = "luckty.txt";
-        
-        //写文件
-        oFso = new ActiveXObject("Scripting.FileSystemObject");  
-         oFile = oFso.OpenTextFile(sFile,2,true); //写方式打开
-        oFile.WriteLine("菩提本无树，明镜亦非台，本来无一物，何处惹尘埃!");      
-         oFile.Close();  
-        
-        //读文件
-        oFile = oFso.OpenTextFile(sFile,1);  //只读方式打开
-        sContent = oFile.ReadLine();
-         oFile.Close();  
-        
-         document.write(sFile + "文件内容为：<br/><br/>" + sContent);
-        </script>
-        
+    <script src="login.js" defer></script>      
 </head>
 <body>
 
     <div class="container">
         <img src="favicon.svg" alt="favicon" class="favicon">
-
-        <div class="zy">
-            <div id="as">
-                <input type="password" id="password" oninput="handleInput()"> <!--密码框-->
-                <i class="fa fa-eye" id="togglePassword"></i><!--密码框最后的眼睛，用来显示与隐藏密码-->
-                
-            </div>
-            <span id="giao"></span><!--验证信息显示在此处-->
-        </div>
-
+        <form>
+            <label>账号:</label>
+            <input type="text" id="username">
+            <label>密码:</label>
+            <input type="password" id="password">
+            <button id="submitBtn" type="button">登陆</button>
+        </form>
         
+    </div>
+    
+</body>
+</html>
 
 
     </div>
