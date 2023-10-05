@@ -20,25 +20,10 @@ body{
     height:80px;
 }
 
-
-
-	
-.zy {/*将输入框设置在网页最中央,可有可无,主要是好看*/
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/*设置文本框样式*/
-input {
-    border: none;/*去掉边框*/
-    outline: none;/*去掉获取焦点时的样式*/
-    float: left;/*字体显示在最右边*/
-}
-/*设置div样式，这里为了将小眼睛放入文本框中，用了一个笨方法，将文本框边框全部去了，
-然后拿一个div将眼睛和文本框套起来，给div加上边框后，就另类的完成了*/
-#as {
-    border: 1px solid #000;
+label,
+input,
+button{
+    display:block;
 }
 
 
